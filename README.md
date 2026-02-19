@@ -57,6 +57,26 @@ $ pnpm run test:e2e
 $ pnpm run test:cov
 ```
 
+## TUS upload frontend example (Uppy + MVC)
+
+This project exposes an example page for frontend developers at:
+
+```bash
+GET /upload/example
+```
+
+The page demonstrates:
+
+- Uppy Dashboard + TUS plugin
+- Uploading to the backend TUS route at `POST/PATCH/HEAD /upload/uploads`
+- A simple client-side MVC structure (Model, View, Controller classes)
+
+Start the app and open:
+
+```bash
+http://localhost:3000/upload/example
+```
+
 ## Deployment
 
 When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
