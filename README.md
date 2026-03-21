@@ -38,10 +38,12 @@ Create a `.env` file in project root (already included in this repository) and s
 ```bash
 TUS_UPLOAD_PATH=/upload/uploads
 TUS_FILES_DIRECTORY=./files
+TUS_ALLOWED_ORIGINS=
 ```
 
 - `TUS_UPLOAD_PATH`: Backend TUS endpoint path.
 - `TUS_FILES_DIRECTORY`: Local directory where uploaded files and metadata are stored.
+- `TUS_ALLOWED_ORIGINS`: Optional comma-separated CORS allowlist (example: `https://app.example.com,https://admin.example.com`).
 
 ## Compile and run the project
 

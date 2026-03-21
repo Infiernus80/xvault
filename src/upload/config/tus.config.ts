@@ -22,3 +22,18 @@ export function getTusFilesDirectory(): string {
 
 	return configuredDirectory;
 }
+
+export function getTusAllowedOrigins(): string[] | undefined {
+	const configuredOrigins = process.env.TUS_ALLOWED_ORIGINS?.trim();
+
+	if (!configuredOrigins) {
+		return undefined;
+	}
+
+	const origins = configuredOrigins
+		.split(',')
+		.map(origin => origin.trim())
+		.filter(Boolean);
+
+	return origins.length > 0 ? origins : undefined;
+}
