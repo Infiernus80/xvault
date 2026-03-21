@@ -3,7 +3,7 @@ import { TusService } from './services/tus/tus.service';
 import { UploadController } from './upload.controller';
 
 @Module({
-  providers: [TusService],
-  controllers: [UploadController]
+	providers: [TusService],
+	controllers: [UploadController],
 })
 export class UploadModule {}

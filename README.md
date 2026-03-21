@@ -31,6 +31,18 @@
 $ pnpm install
 ```
 
+## Environment variables
+
+Create a `.env` file in project root (already included in this repository) and set:
+
+```bash
+TUS_UPLOAD_PATH=/upload/uploads
+TUS_FILES_DIRECTORY=./files
+```
+
+- `TUS_UPLOAD_PATH`: Backend TUS endpoint path.
+- `TUS_FILES_DIRECTORY`: Local directory where uploaded files and metadata are stored.
+
 ## Compile and run the project
 
 ```bash
