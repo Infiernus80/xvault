@@ -1,7 +1,7 @@
 export function renderUppyMvcExamplePage(tusEndpoint: string): string {
-  const safeTusEndpoint = JSON.stringify(tusEndpoint);
+	const safeTusEndpoint = JSON.stringify(tusEndpoint);
 
-  return `<!doctype html>
+	return `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
